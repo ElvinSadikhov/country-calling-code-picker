@@ -190,7 +190,7 @@ class _CountryPickerWidgetState extends State<CountryPickerWidget> {
                             ),
                             Expanded(
                                 child: Text(
-                              "${_filteredList[index].flag}"
+                              "${_filteredList[index].flag}",
                               // '${_filteredList[index].callingCode} ${_filteredList[index].name}',
                               style: widget.itemTextStyle,
                             )),
