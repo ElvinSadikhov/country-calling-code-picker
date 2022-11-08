@@ -11,6 +11,7 @@ import './country.dart';
 Image getFlagImage({required String name, double? height, double? width}) {
   return Image.asset(
     name,
+    package: countryCodePackageName,
     height: height,
     width: width
   );
