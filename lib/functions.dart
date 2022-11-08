@@ -7,6 +7,16 @@ import 'package:flutter_sim_country_code/flutter_sim_country_code.dart';
 
 import './country.dart';
 
+
+Image getFlagImage({required String name, double? height, double? width}) {
+  return Image.asset(
+    name,
+    height: height,
+    width: width
+  );
+}
+
+
 ///This function returns list of countries
 Future<List<Country>> getCountries(BuildContext context) async {
   String rawData = await DefaultAssetBundle.of(context).loadString(
